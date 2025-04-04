@@ -4,6 +4,7 @@ import './App.css'
 import arrow from './assets/arrow.png'
 import lynxLogo from './assets/lynx-logo.png'
 import reactLynxLogo from './assets/react-logo.png'
+import OnBoarding from './pages/OnBoarding.jsx'
 
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false)
@@ -19,7 +20,8 @@ export function App() {
 
   return (
     <view>
-      <view className='Background' />
+      <OnBoarding />
+      {/* <view className='Background' />
       <view className='App'>
         <view className='Banner'>
           <view className='Logo' bindtap={onTap}>
@@ -39,7 +41,7 @@ export function App() {
           </text>
         </view>
         <view style={{ flex: 1 }}></view>
-      </view>
+      </view> */}
     </view>
   )
 }
